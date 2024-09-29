@@ -6,6 +6,7 @@ import Root from "./Components/Root/Root"; // Import your custom Root component
 import Home from "./Components/Home/Home"; // Import Home component
 import ListedBooks from "./Components/ListedBooks/ListedBooks";
 import PagesToRead from "./Components/PagesToRead/PagesToRead";
+import BookDetails from "./Components/BookDetails/BookDetails";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
       {
         path: "/pagestoread",
         element: <PagesToRead></PagesToRead>,
+      },
+      {
+        path: "book/:id",
+        element: <BookDetails></BookDetails>,
+        loader: () => fetch("../public/books.json"),
       },
     ],
   },

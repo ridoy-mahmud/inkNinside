@@ -1,0 +1,80 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1668782119i/40097951.jpg",
+    "review": "A psychological thriller that keeps you guessing until the end.",
+    "totalPages": 336,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": ["Suspense", "Psychological"],
+    "publisher": "Celadon Books",
+    "yearOfPublishing": 2019
+  },
+  {
+    "bookId": 2,
+    "bookName": "Educated",
+    "author": "Tara Westover",
+    "image": "https://julias-books.com/wp-content/uploads/2019/04/educated-img.jpg?w=296&h=454",
+    "review": "A memoir about a woman who escapes a strict and isolated childhood to pursue education.",
+    "totalPages": 334,
+    "rating": 4.7,
+    "category": "Memoir",
+    "tags": ["Inspiration", "Biography"],
+    "publisher": "Random House",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 3,
+    "bookName": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1582135294i/36809135.jpg",
+    "review": "A poignant mystery set in the marshlands of North Carolina.",
+    "totalPages": 384,
+    "rating": 4.6,
+    "category": "Mystery",
+    "tags": ["Mystery", "Romance"],
+    "publisher": "G.P. Putnam's Sons",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 3,
+    "bookName": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81YOuOGFCJL.jpg",
+    "review": "A magical adventure of a young wizard discovering his destiny at Hogwarts School of Witchcraft and Wizardry.",
+    "totalPages": 309,
+    "rating": 4.8,
+    "category": "Fantasy",
+    "tags": ["Fantasy", "Adventure"],
+    "publisher": "Scholastic",
+    "yearOfPublishing": 1997
+  },
+  {
+    "bookId": 5,
+    "bookName": "The Alchemist",
+    "author": "Paulo Coelho",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654371463i/18144590.jpg",
+    "review": "A philosophical novel about following your dreams.",
+    "totalPages": 208,
+    "rating": 4.3,
+    "category": "Philosophy",
+    "tags": ["Adventure", "Self-Discovery"],
+    "publisher": "HarperOne",
+    "yearOfPublishing": 1988
+  },
+  {
+    "bookId": 6,
+    "bookName": "Atomic Habits",
+    "author": "James Clear",
+    "image": "https://pathakshamabesh.com/wp-content/uploads/2022/02/91bYsX41DVL.jpg",
+    "review": "A guide to building good habits and breaking bad ones.",
+    "totalPages": 320,
+    "rating": 4.9,
+    "category": "Self-help",
+    "tags": ["Motivation", "Productivity"],
+    "publisher": "Avery",
+    "yearOfPublishing": 2018
+  }
+]
