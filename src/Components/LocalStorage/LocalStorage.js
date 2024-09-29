@@ -1,16 +1,36 @@
+// LocalStorage utility functions
 const getStoredApplication = () => {
   const storedApplication = localStorage.getItem("bookDetails");
-  if (storedApplication) {
-    return JSON.parse(storedApplication);
-  }
-  return [];
+  return storedApplication ? JSON.parse(storedApplication) : [];
 };
+
 const saveBookApplication = (id) => {
   const storedBookApplication = getStoredApplication();
-  const exist = storedBookApplication.find((bookId) => bookId === id);
-  if (!exist) {
+  if (!storedBookApplication.includes(id)) {
     storedBookApplication.push(id);
     localStorage.setItem("bookDetails", JSON.stringify(storedBookApplication));
   }
 };
-export { getStoredApplication, saveBookApplication };
+
+const getStoredApplicationWish = () => {
+  const storedApplication = localStorage.getItem("bookDetailsWishlist");
+  return storedApplication ? JSON.parse(storedApplication) : [];
+};
+
+const saveBookApplicationWishlist = (id) => {
+  const storedBookApplication = getStoredApplicationWish();
+  if (!storedBookApplication.includes(id)) {
+    storedBookApplication.push(id);
+    localStorage.setItem(
+      "bookDetailsWishlist",
+      JSON.stringify(storedBookApplication)
+    );
+  }
+};
+
+export {
+  getStoredApplication,
+  getStoredApplicationWish,
+  saveBookApplication,
+  saveBookApplicationWishlist,
+};
