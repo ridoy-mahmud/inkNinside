@@ -12,49 +12,45 @@ const DisplayListedBooks = ({ book }) => {
     review,
     yearOfPublishing,
   } = book;
+
   return (
-    <div className="w-8/12 mx-auto flex justify-start mt-20 border-2">
-      <div className="w-6/12 p-6 mx-auto justify-center">
-        <img className="w-10/12 " src={image} alt="" />
+    <div className="w-full md:w-11/12 lg:w-8/12 mx-auto flex flex-col md:flex-row justify-start mt-10 border-2 p-4">
+      <div className="w-full md:w-6/12 p-4">
+        <img className="w-full md:w-10/12" src={image} alt="" />
       </div>
-      <div className="w-full text-start  text-black">
-        <h1 className="font-bold text-4xl mt-3">{bookName}</h1>
-        <br />
-        <p className="text-xl text-gray-800">By : {author}</p>
-        <br />
-        <div>
-          <p className="font-bold">
-            Tags:
-            <span className="ms-3 me-4 text-green-600 bg-[#ece8e8] px-2 py-1 rounded-xl text-center">
-              #{tags[0]}
+      <div className="w-full text-start text-black p-4">
+        <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl">
+          {bookName}
+        </h1>
+        <p className="text-lg text-gray-800 mt-2">By: {author}</p>
+        <p className="mt-4">
+          <span className="font-bold">Tags: </span>
+          {tags.map((tag, index) => (
+            <span
+              key={index}
+              className="text-green-600 bg-gray-100 px-2 py-1 rounded-lg text-sm mr-2"
+            >
+              #{tag}
             </span>
-            <span className=" text-green-600 bg-[#ece8e8] px-2 py-1 rounded-2xl text-center">
-              #{tags[1]}
-            </span>
-            <span className="ms-4 text-sm font-serif">
-              Year of Publishing:
-              <span className="text-green-600 bg-[#ece8e8] px-2 py-1 rounded-2xl">
-                #{yearOfPublishing}
-              </span>
-            </span>
-          </p>
-          <br />
-          <hr className="border-2" />
-          <br />
-          <div className="font-sans flex gap-5">
-            <div className=" text-gray-600 ">
-              <p className="mb-2">No of pages:</p>
-              <p className="mb-2">Publisher: </p>
-              <p className="mb-2">Year of Publishing </p>
-            </div>
-            <div className="text-black">
-              <p className="mb-2"> {totalPages}</p>
-              <p className="mb-2">{publisher}</p>
-              <p className="mb-2">{rating}</p>
-            </div>
+          ))}
+        </p>
+        <p className="mt-4 text-sm">
+          <span className="font-bold">Year of Publishing: </span>
+          {yearOfPublishing}
+        </p>
+        <hr className="border-2 mt-4" />
+        <div className="font-sans flex gap-5 mt-4">
+          <div className="text-gray-600">
+            <p>No of pages:</p>
+            <p>Publisher:</p>
+            <p>Rating:</p>
+          </div>
+          <div className="text-black">
+            <p>{totalPages}</p>
+            <p>{publisher}</p>
+            <p>{rating}</p>
           </div>
         </div>
-        <br />
       </div>
     </div>
   );
